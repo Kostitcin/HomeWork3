@@ -2,20 +2,12 @@ import requests
 
 url = "https://fakestoreapi.com/products"
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 29c1b7c27f374a0b4c2c5df7abe1a2e017625b8e
 def get_categories():
     response = requests.get(url)
     products = response.json()
     categories = set(product['category'] for product in products)
     return categories
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 29c1b7c27f374a0b4c2c5df7abe1a2e017625b8e
 def get_products_by_category(category):
     response = requests.get(url)
     products = response.json()
@@ -31,10 +23,6 @@ def get_products_by_category(category):
     else:
         print(f"Нет товаров в категории '{category}'.")
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 29c1b7c27f374a0b4c2c5df7abe1a2e017625b8e
 categories = get_categories()
 print("Доступные категории товаров:")
 for cat in categories:
